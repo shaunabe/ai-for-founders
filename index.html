@@ -138,6 +138,12 @@
     border:1px solid var(--line-grey);border-radius:24px;
     padding:.32rem .8rem;font-size:.82rem;font-weight:500;white-space:nowrap;
   }
+  .schip.open{background:var(--blue);border-color:var(--blue);color:#fff;font-weight:600;}
+  .stack-legend{display:flex;gap:1.4rem;align-items:center;margin-top:1.5rem;font-size:.8rem;color:var(--muted);}
+  .stack-legend .key{display:flex;align-items:center;gap:.45rem;}
+  .stack-legend .swatch{width:13px;height:13px;border-radius:50%;}
+  .stack-legend .swatch.open{background:var(--blue);}
+  .stack-legend .swatch.internal{border:1px solid var(--line-grey);background:#fff;}
   .stackrow.foundation{border-top:1px solid var(--line-grey);padding-top:1.05rem;margin-top:.2rem;}
   .stackrow.foundation .rlabel{color:#555;}
   .stackrow.foundation .rlabel .dot{background:#555;}
@@ -277,12 +283,13 @@
           <span class="schip">lp-deck-builder</span>
           <span class="schip">brand-voice</span>
           <span class="schip">standup + to-do</span>
+          <span class="schip open">/seed-pitch-kit</span>
         </div>
       </div>
       <div class="stackrow">
         <div class="rlabel"><span class="dot"></span>Robots</div>
         <div class="rchips">
-          <span class="schip">robots@ email intake</span>
+          <span class="schip">email-to-deal intake</span>
           <span class="schip">investor-update one-shot</span>
           <span class="schip">daily standup &amp; tasks</span>
           <span class="schip">inbox AI triage</span>
@@ -293,7 +300,7 @@
       <div class="stackrow">
         <div class="rlabel"><span class="dot"></span>Tools</div>
         <div class="rchips">
-          <span class="schip">Cap Stack Compass · creditdb.ai</span>
+          <span class="schip open">Cap Stack Compass · creditdb.ai</span>
           <span class="schip">Sync deal platform</span>
           <span class="schip">intro-list apps</span>
           <span class="schip">LP netgraph</span>
@@ -315,7 +322,11 @@
         </div>
       </div>
     </div>
-    <p class="stack-note">Same three layers as the rest of this deck — reusable <b>Skills</b>, scheduled <b>Robots</b>, and founder-facing <b>Tools</b> — all sitting on shared data and models.</p>
+    <div class="stack-legend">
+      <span class="key"><span class="swatch open"></span>Open to founders</span>
+      <span class="key"><span class="swatch internal"></span>Internal — how we run</span>
+    </div>
+    <p class="stack-note">Most of this runs behind the scenes. What's open to you today is <b>Cap Stack Compass</b> at <b>creditdb.ai</b> — with shareable Skills like <b>/seed-pitch-kit</b> rolling out next.</p>
   </section>
 
   <!-- 5 · DIVIDER 1 -->
@@ -374,7 +385,7 @@
         <h3><span class="dot dot-blue"></span>What changed</h3>
         <ul class="clean">
           <li>We moved our core database to a setup AI can <b>read and write directly</b> — retiring most of our old glue-code and Zapier wiring.</li>
-          <li>Forward anything to <b>robots@thirdsphere.com</b> and it acts for us — logging a deal, updating a record, posting to Slack.</li>
+          <li>A dedicated robot inbox turns a forwarded email into action for us — a logged deal, an updated record, a Slack post.</li>
           <li>It runs in the cloud on a schedule, so nothing depends on a laptop being open.</li>
         </ul>
       </div>
@@ -447,8 +458,8 @@
       </div>
       <div class="step">
         <div class="n">03</div>
-        <h4>Send us the rest</h4>
-        <p>Email <b>robots@thirdsphere.com</b> with whatever you want a robot to do, and we'll help build the workflow.</p>
+        <h4>Use what's open to you</h4>
+        <p>Start with <b>Cap Stack Compass</b> at creditdb.ai for non-dilutive capital — and ask us about Skills we're sharing, like <b>/seed-pitch-kit</b>.</p>
       </div>
     </div>
   </section>
@@ -459,7 +470,7 @@
     <p class="kicker">In short</p>
     <h2>Package what you repeat.<br>Automate what recurs.<br>Build what your data already knows.</h2>
     <p class="quote">We work for founders accelerating the transformation of global systems. Right now, that means handing you what we learn the week we learn it.</p>
-    <p class="cta">Questions, or something you want automated? <b>robots@thirdsphere.com</b> &nbsp;·&nbsp; or grab us at the next AI Lunch &amp; Learn.</p>
+    <p class="cta">Try it: <b>Cap Stack Compass</b> at creditdb.ai &nbsp;·&nbsp; ask us about Skills like <b>/seed-pitch-kit</b> &nbsp;·&nbsp; or find us at the next AI Lunch &amp; Learn.</p>
   </section>
 
 </div>

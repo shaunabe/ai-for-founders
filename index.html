@@ -149,6 +149,13 @@
   .stackrow.foundation .rlabel .dot{background:#555;}
   .stackrow.foundation .schip{border-style:dashed;color:#444;}
   .stack-note{margin-top:1.7rem;font-size:.92rem;color:var(--muted);max-width:64ch;font-weight:300;}
+
+  .codeline{
+    display:inline-block;margin-top:1.6rem;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    font-size:.92rem;color:#444;background:var(--grey);border:1px solid var(--line-grey);
+    border-radius:8px;padding:.6rem 1rem;
+  }
+  .codeline .tag{color:var(--blue);font-weight:600;}
   @media (max-width:640px){
     .stackrow{grid-template-columns:1fr;gap:.5rem;}
     .schip{font-size:.74rem;padding:.28rem .65rem;}
@@ -464,7 +471,24 @@
     </div>
   </section>
 
-  <!-- 11 · CLOSING -->
+  <!-- 12 · HOW THIS WAS MADE -->
+  <section class="slide light" data-theme="light">
+    <p class="kicker">How this deck was made</p>
+    <h2 class="title" style="max-width:22ch;">No deck tool. Just HTML.</h2>
+    <div class="nodes" style="margin-top:2.4rem;">
+      <div class="node-step"><div class="node"><span class="dot"></span>10 weeks of standups</div><span class="connector"></span></div>
+      <div class="node-step"><div class="node"><span class="dot"></span>One HTML file</div><span class="connector"></span></div>
+      <div class="node-step"><div class="node"><span class="dot"></span>A live URL</div></div>
+    </div>
+    <p class="body" style="font-size:1.15rem;margin-top:2rem;max-width:56ch;">No PowerPoint, no Canva, no slide app. We pulled our own standup notes from Notion, had Claude write the whole thing as a single on-brand HTML file, and published it to a link in minutes. Want a change? We just ask for it.</p>
+    <div class="codeline">&lt;<span class="tag">section</span> class=<span class="tag">"slide"</span>&gt; — this slide is the demo.</div>
+    <div class="takeaway">
+      <div class="t-label">The point</div>
+      <p>Same three shifts, pointed at making the thing you're looking at. <b>Source material in, a working tool out</b> — no external software in the loop.</p>
+    </div>
+  </section>
+
+  <!-- 13 · CLOSING -->
   <section class="slide dark closing" data-theme="dark">
     <div class="orbit"><div class="ring"></div><div class="ring"></div><div class="ring"></div><div class="core"></div></div>
     <p class="kicker">In short</p>
@@ -479,7 +503,7 @@
 <div class="arrow prev" id="prev">‹</div>
 <div class="arrow next" id="next">›</div>
 <div class="progress" id="progress"></div>
-<div class="counter" id="counter">01 / 12</div>
+<div class="counter" id="counter">01 / 13</div>
 <div class="nav-hint">← → or space to navigate</div>
 
 <script>
